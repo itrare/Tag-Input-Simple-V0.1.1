@@ -29,7 +29,7 @@
 {% seo %}
   </head>
 
-  <body>
+  <body style='width:100%;'>
     <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
     <div class="shell">
 
@@ -38,21 +38,7 @@
           <span class="ribbon-inner">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-                  <div class='input-group input-group-sm mb-2 '>
-         <div class='input-group-prepend'>
-            <span for='name' class='input-group-text fa fa-tags'><a href='#'  data-toggle='popover' title='Tags' data-trigger='focus' data-content='Tags are used to define the data that a user uses. A label attached to someone or something for the purpose of identification or to give other information.'>Tags</a></span>
-         </div>
-         <div class='tag-input clearfix form-control' >
-            <div class='tags' >
-               <div id="tg" class="alert alert-dismissible tag bg-success"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
-               <div id="tg" class="alert alert-dismissible tag bg-primary"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
-               <div id="tg" class="alert alert-dismissible tag bg-danger"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
-               <div id="tg" class="alert alert-dismissible tag bg-warning"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
-               <div id="tg" class="alert alert-dismissible tag bg-dark"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
-            </div>
-            <input class='p-0 ' type='text' id='tags'  data-role='tagsinput'></input>
-         </div>
-      </div>
+                 
             
           </span>
           <span class="left-tail"></span>
@@ -79,6 +65,21 @@
 
       <section id="main_content">
         {{ content }}
+         <div class='input-group input-group-sm mb-2 '>
+         <div class='input-group-prepend'>
+            <span for='name' class='input-group-text fa fa-tags'><a href='#'  data-toggle='popover' title='Tags' data-trigger='focus' data-content='Tags are used to define the data that a user uses. A label attached to someone or something for the purpose of identification or to give other information.'>Tags</a></span>
+         </div>
+         <div class='tag-input clearfix form-control' >
+            <div class='tags' >
+               <div id="tg" class="alert alert-dismissible tag bg-success"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
+               <div id="tg" class="alert alert-dismissible tag bg-primary"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
+               <div id="tg" class="alert alert-dismissible tag bg-danger"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
+               <div id="tg" class="alert alert-dismissible tag bg-warning"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
+               <div id="tg" class="alert alert-dismissible tag bg-dark"><a class="sty" href="">Tag</a><a href="#" style="text-decoration:none;" class="rounded-circle tt " data-dismiss="alert"><span class="fa wc-cros"></span></a></div>
+            </div>
+            <input class='p-0 ' type='text' id='tags'  data-role='tagsinput'></input>
+         </div>
+      </div>
       </section>
 
       <footer>
